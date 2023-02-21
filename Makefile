@@ -1,7 +1,7 @@
 EXEC = ian-proj1
 CC = gcc
 CFLAGS = -std=gnu99 -Wall -Wextra -Werror -pedantic
-LDLIBS = -lpthread -pthread
+LDLIBS = -lelf
 
 SRCS = $(wildcard *.c)
 OBJS = $(patsubst %.c,%.o,$(SRCS))
